@@ -17,6 +17,11 @@ void SensorTask(void *pv)
         printf("Sensor Task: sensor_data %d\n", sensor_data);
         xQueueSend(sensor_queue, &sensor_data, portMAX_DELAY);
         vTaskDelay(500/portTICK_PERIOD_MS);
+        if(sensor_data==10)
+        {
+            printf("Sensor Task: sensor_data %d\n", sensor_data);
+            vTaskDelay(15000/portTICK_PERIOD_MS);
+        }
     }
 }
 
