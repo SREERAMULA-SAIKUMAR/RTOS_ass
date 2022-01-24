@@ -3,7 +3,6 @@
 ## Day-1
 
 * Logical and Temporal Analysis
-* Real Time Systems
 
 ------
 
