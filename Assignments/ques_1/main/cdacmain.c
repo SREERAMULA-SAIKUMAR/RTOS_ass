@@ -11,7 +11,7 @@ void SensorTask(void *pv)
     }
 }
 
-void AlarmTask(void *pvparameters)
+void AlarmTask(void *pv)
 {
     while(1)
     {
